@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parent Document</title>
+  </head>
+  <body>
+    <iframe id="myIframe" src="iframe.html"></iframe>
+    <script>
+      // Function to set an item in parent's localStorage
+      function setParentStorage() {
+        localStorage.setItem("messageFromParent", "Hello from the parent!");
+      }
+      setParentStorage();
+    </script>
+  </body>
+</html>

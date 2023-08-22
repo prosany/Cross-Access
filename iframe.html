@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Iframe Document</title>
+  </head>
+  <body>
+    <script>
+      // Function to get an item from parent's localStorage
+      function getParentStorage() {
+        const message = window.parent.localStorage.getItem("messageFromParent");
+        if (message) {
+          console.log("Message from parent:", message);
+        } else {
+          console.log("No message from parent.");
+        }
+      }
+    </script>
+    <button onclick="getParentStorage()">Get Message from Parent</button>
+  </body>
+</html>
